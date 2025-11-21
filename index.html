@@ -8,13 +8,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* ESTILOS PRINCIPALES - OPTIMIZADOS PARA GITHUB */
+   /* ESTILOS PRINCIPALES - OPTIMIZADOS PARA GITHUB */
         :root {
-            --primary-color: #2c5e8c;
-            --secondary-color: #4a7bab;
-            --accent-color: #6a9bc8;
-            --light-accent: #d4e4f3;
-            --background-light: #f0f6fc;
+            --primary-color: #4a3b76;
+            --secondary-color: #6a5a8c;
+            --accent-color: #8a79b3;
+            --light-accent: #e2d1f9;
+            --background-light: #f8f6fc;
             --text-dark: #333333;
             --text-medium: #555555;
             --text-light: #666666;
@@ -30,7 +30,7 @@
             font-family: 'Inter', Arial, sans-serif;
             line-height: 1.6;
             color: var(--text-dark);
-            background: linear-gradient(135deg, #f0f6fc 0%, #d4e4f3 100%);
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
             padding: 20px;
             min-height: 100vh;
             -webkit-font-smoothing: antialiased;
@@ -55,7 +55,7 @@
 
         /* HEADER */
         .header {
-            background: linear-gradient(135deg, var(--light-accent), #b8d4eb);
+            background: linear-gradient(135deg, var(--light-accent), #c9b6e4);
             padding: 30px 40px;
             color: var(--primary-color);
             text-align: center;
@@ -69,7 +69,7 @@
             left: 0;
             right: 0;
             height: 4px;
-            background: linear-gradient(90deg, #b8d4eb, #f0f0f0);
+            background: linear-gradient(90deg, #c9b6e4, #f0f0f0);
         }
 
         .name {
@@ -264,7 +264,7 @@
         .qr-section:hover {
             transform: scale(1.02);
             border-color: var(--accent-color);
-            box-shadow: 0 5px 15px rgba(106, 155, 200, 0.2);
+            box-shadow: 0 5px 15px rgba(138, 121, 179, 0.2);
         }
 
         .qr-section img {
@@ -293,6 +293,43 @@
             color: white;
         }
 
+        /* PORTAFOLIO QR ESPECIAL */
+        .portfolio-qr {
+            text-align: center;
+            margin: 15px 0;
+            padding: 15px;
+            background: linear-gradient(135deg, var(--light-accent), #d8c8f0);
+            border-radius: 12px;
+            border: 2px solid var(--accent-color);
+            transition: all 0.3s ease;
+        }
+
+        .portfolio-qr:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(138, 121, 179, 0.3);
+        }
+
+        .portfolio-qr img {
+            border-radius: 10px;
+            border: 3px solid white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .portfolio-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin: 10px 0;
+            font-size: 10px;
+        }
+
+        .stat-item {
+            background: rgba(255, 255, 255, 0.7);
+            padding: 6px;
+            border-radius: 6px;
+            font-weight: 500;
+        }
+
         /* BOTÓN DE IMPRESIÓN DINÁMICO */
         .print-button-container {
             position: fixed;
@@ -313,14 +350,14 @@
             display: flex;
             align-items: center;
             gap: 8px;
-            box-shadow: 0 4px 12px rgba(106, 155, 200, 0.3);
+            box-shadow: 0 4px 12px rgba(138, 121, 179, 0.3);
             transition: all 0.3s ease;
         }
 
         .print-btn:hover {
             background: var(--secondary-color);
             transform: translateY(-2px);
-            box-shadow: 0 6px 16px rgba(106, 155, 200, 0.4);
+            box-shadow: 0 6px 16px rgba(138, 121, 179, 0.4);
         }
 
         .print-btn:active {
@@ -470,13 +507,13 @@
 
         @keyframes pulse {
             0% {
-                box-shadow: 0 0 0 0 rgba(106, 155, 200, 0.4);
+                box-shadow: 0 0 0 0 rgba(138, 121, 179, 0.4);
             }
             70% {
-                box-shadow: 0 0 0 10px rgba(106, 155, 200, 0);
+                box-shadow: 0 0 0 10px rgba(138, 121, 179, 0);
             }
             100% {
-                box-shadow: 0 0 0 0 rgba(106, 155, 200, 0);
+                box-shadow: 0 0 0 0 rgba(138, 121, 179, 0);
             }
         }
 
@@ -513,7 +550,7 @@
         <!-- ENCABEZADO -->
         <header class="header">
             <h1 class="name">Deisy Katherine Martínez Chávez</h1>
-            <div class="title">Asistente Administrativa & Apoyo a Proyectos Comunitarios</div>
+            <div class="title">Diseñadora Multimedia & Creativa Digital</div>
             <div class="contact-info">
                 <div class="contact-item">
                     <i class="fas fa-envelope"></i>
@@ -537,7 +574,7 @@
                 <!-- PERFIL PROFESIONAL -->
                 <section class="section">
                     <h2 class="section-title"><i class="fas fa-user"></i> Perfil Profesional</h2>
-                    <p class="profile-text">Profesional con formación técnica y más de dos años de experiencia en labores administrativas, atención al cliente y apoyo en gestión de proyectos comunitarios. Persona organizada, proactiva y con excelentes habilidades de comunicación. Competencias sólidas en gestión documental, atención al público, manejo de agendas y soporte administrativo general, complementadas con habilidades en diseño gráfico y comunicación visual para el apoyo en proyectos institucionales.</p>
+                    <p class="profile-text">Técnica en Diseño e Integración de Multimedia con experiencia en creación de contenido visual, marketing digital y servicio al cliente. Más de dos años de experiencia en labores que combinan habilidades administrativas con apoyo en proyectos creativos y comunitarios. Competencias sólidas en diseño gráfico, edición básica de video y foto, y manejo de redes sociales.</p>
                 </section>
                 
                 <!-- HABILIDADES TÉCNICAS -->
@@ -545,23 +582,22 @@
                     <h2 class="section-title"><i class="fas fa-code"></i> Habilidades Técnicas</h2>
                     <div class="skills-grid">
                         <div class="skills-category">
-                            <div class="category-title">Administrativas</div>
+                            <div class="category-title">Diseño & Multimedia</div>
                             <ul class="skills-list">
-                                <li>Gestión Documental y Archivo</li>
-                                <li>Atención Telefónica y Presencial</li>
-                                <li>Manejo de Agenda y Calendarios</li>
-                                <li>Gestión de Correspondencia</li>
-                                <li>Control de Inventarios</li>
+                                <li>Diseño Gráfico con Canva</li>
+                                <li>Ilustración Digital</li>
+                                <li>Edición de Video: CapCut</li>
+                                <li>Edición Básica de Foto</li>
+                                <li>Manejo de IA Básico</li>
                             </ul>
                         </div>
                         <div class="skills-category">
-                            <div class="category-title">Apoyo a Proyectos & Comunicación</div>
+                            <div class="category-title">Marketing Digital</div>
                             <ul class="skills-list">
-                                <li>Diseño Gráfico Básico (Canva)</li>
-                                <li>Creación de Afiches y Volantes</li>
+                                <li>Community Management</li>
+                                <li>Estrategias de Contenido</li>
+                                <li>Marketing de Contenidos</li>
                                 <li>Gestión de Redes Sociales</li>
-                                <li>Edición de Video Básica (CapCut)</li>
-                                <li>Apoyo en Logística de Eventos</li>
                             </ul>
                         </div>
                         <div class="skills-category">
@@ -570,9 +606,34 @@
                                 <li>Microsoft Office</li>
                                 <li>Google Workspace</li>
                                 <li>Herramientas Ofimáticas</li>
-                                <li>Gestión de Correo Electrónico</li>
                             </ul>
                         </div>
+                    </div>
+                </section>
+
+                <!-- PORTAFOLIO CON QR - INTEGRADO BONITO -->
+                <section class="section">
+                    <h2 class="section-title"><i class="fas fa-folder-open"></i> Mi Portafolio</h2>
+                    <div class="portfolio-qr">
+                        <p style="margin-bottom: 12px; font-weight: 600; color: var(--primary-color); font-size: 13px;">
+                            🎨 Escanea para ver mi trabajo
+                        </p>
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=130x130&data=https://www.canva.com/design/DAG1H0l-sS0/view" 
+                             alt="QR Code para mi portafolio creativo"
+                             style="margin-bottom: 10px;">
+                        
+                        <div class="portfolio-stats">
+                            <div class="stat-item">📝 12 Dibujos</div>
+                            <div class="stat-item">🎨 4 Ilustraciones</div>
+                            <div class="stat-item">🏺 11 Esculturas</div>
+                            <div class="stat-item">📸 9 Fotos</div>
+                        </div>
+                        
+                        <a href="https://www.canva.com/design/DAG1H0l-sS0/view" 
+                           target="_blank" 
+                           style="display: inline-block; margin-top: 8px; padding: 6px 12px; background: var(--accent-color); color: white; border-radius: 15px; text-decoration: none; font-weight: 500; font-size: 11px; transition: all 0.3s ease;">
+                            <i class="fas fa-external-link-alt"></i> Ver portafolio online
+                        </a>
                     </div>
                 </section>
 
@@ -580,26 +641,15 @@
                 <section class="section">
                     <h2 class="section-title"><i class="fas fa-brain"></i> Habilidades Personales</h2>
                     <ul class="skills-list">
-                        <li>Comunicación Efectiva y Asertiva</li>
-                        <li>Orientación al Servicio y Atención al Cliente</li>
+                        <li>Creatividad e Innovación</li>
+                        <li>Adaptabilidad y Aprendizaje Rápido</li>
                         <li>Organización y Gestión del Tiempo</li>
                         <li>Trabajo en Equipo y Colaboración</li>
-                        <li>Adaptabilidad y Aprendizaje Rápido</li>
-                        <li>Responsabilidad y Compromiso</li>
+                        <li>Servicio al Cliente y Comunicación</li>
+                        <li>Resolución de Problemas</li>
                     </ul>
                 </section>
                 
-                <!-- DISPONIBILIDAD -->
-                <section class="section">
-                    <h2 class="section-title"><i class="fas fa-clock"></i> Disponibilidad</h2>
-                    <ul class="skills-list">
-                        <li>Medio Turno (Mañana o Tarde)</li>
-                        <li>Presencial o Remoto</li>
-                        <li>Fines de Semana (Flexible)</li>
-                        <li>Vistahermosa y Municipios Aledaños</li>
-                    </ul>
-                </section>
-
                 <!-- IDIOMAS -->
                 <section class="section">
                     <h2 class="section-title"><i class="fas fa-language"></i> Idiomas</h2>
@@ -620,11 +670,11 @@
                 <!-- QR CODE DINÁMICO -->
                 <div class="qr-section" onclick="copyURL()">
                     <p style="margin-bottom: 10px; font-weight: 500; color: var(--primary-color);">📱 Escanea para ver mi CV online</p>
-                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://trabajaconkathe-dk.github.io/cv-alcaldia/" 
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://trabajaconkathe-dk.github.io/-cv-deisy-katherine/" 
                          alt="QR Code para mi CV"
                          id="qr-code">
                     <div class="url-display">
-                        <small id="url-text">https://trabajaconkathe-dk.github.io/cv-alcaldia/</small>
+                        <small id="url-text">https://trabajaconkathe-dk.github.io/-cv-deisy-katherine/</small>
                     </div>
                     <p style="font-size: 10px; color: var(--text-light); margin-top: 5px;">👆 Haz clic para copiar URL</p>
                 </div>
@@ -651,23 +701,12 @@
                     
                     <article class="experience-item">
                         <div class="item-header">
-                            <h3 class="item-title">Asistente Administrativa</h3>
-                            <div class="item-date">2024 – 2025</div>
+                            <h3 class="item-title">Diseñadora Freelance y Emprendedora</h3>
+                            <div class="item-date">2025 – Actualidad</div>
                         </div>
-                        <div class="item-subtitle">ASOMUDEM - Asociación de Mujeres Emprendedoras | Vistahermosa, Meta</div>
+                        <div class="item-subtitle">DeKora | Vistahermosa, Meta</div>
                         <div class="item-description">
-                            Apoyo en gestión documental, seguimiento de proyectos comunitarios y atención al público. Coordinación de talleres y actividades. Organización de archivos, informes y correspondencia institucional. Manejo de agenda y logística de eventos. <strong>Creación de material visual</strong> (afiches, flyers) para la promoción de talleres y actividades en redes sociales.
-                        </div>
-                    </article>
-                    
-                    <article class="experience-item">
-                        <div class="item-header">
-                            <h3 class="item-title">Asistente Administrativa</h3>
-                            <div class="item-date">2023 – 2024</div>
-                        </div>
-                        <div class="item-subtitle">Consultorio Jurídico de Asesorías y Conciliaciones | Vistahermosa, Meta</div>
-                        <div class="item-description">
-                            Recepción y registro de usuarios. Manejo de documentación y control de archivo físico y digital. Apoyo en trámites administrativos y coordinación de agendas para el equipo jurídico. Atención telefónica y presencial.
+                            Creación de productos artesanales y digitales, incluyendo ilustraciones digitales, arte personalizado y materiales de decoración. Diseño de piezas visuales para redes sociales, catálogos, flyers y tarjetas de presentación para pequeños negocios.
                         </div>
                     </article>
                     
@@ -678,7 +717,18 @@
                         </div>
                         <div class="item-subtitle">Consuerte del Meta | Vistahermosa, Meta</div>
                         <div class="item-description">
-                            Atención personalizada al cliente y asesoramiento en servicios. Manejo de caja, recargas y transacciones. Cumplimiento sistemático de metas de venta. Fidelización de clientes mediante servicio de calidad.
+                            Atención personalizada al cliente y asesoramiento en servicios, aplicando técnicas de venta y servicio al cliente. Manejo de caja, recargas y transacciones, con enfoque en la exactitud y eficiencia.
+                        </div>
+                    </article>
+                    
+                    <article class="experience-item">
+                        <div class="item-header">
+                            <h3 class="item-title">Asistente Administrativa y de Proyectos</h3>
+                            <div class="item-date">2024 – 2025</div>
+                        </div>
+                        <div class="item-subtitle">ASOMUDEM – Asociación de Mujeres Emprendedoras | Vistahermosa, Meta</div>
+                        <div class="item-description">
+                            Apoyo en la gestión documental y seguimiento de proyectos comunitarios y de emprendimiento. Coordinación y logística de talleres y actividades comunitarias.
                         </div>
                     </article>
                 </section>
@@ -708,26 +758,18 @@
                     <h2 class="section-title"><i class="fas fa-certificate"></i> Formación Complementaria</h2>
                     <article class="education-item">
                         <div class="item-header">
-                            <h3 class="item-title">Servicio al Cliente</h3>
-                            <div class="item-date">2024</div>
-                        </div>
-                        <div class="item-subtitle">SENA - Técnicas de atención y servicio al cliente</div>
-                    </article>
-                    
-                    <article class="education-item">
-                        <div class="item-header">
-                            <h3 class="item-title">Habilidades Administrativas</h3>
-                            <div class="item-date">2023-2024</div>
-                        </div>
-                        <div class="item-subtitle">SENA - Gestión documental, organización y planificación</div>
-                    </article>
-                    
-                    <article class="education-item">
-                        <div class="item-header">
                             <h3 class="item-title">Marketing Digital & Estrategia</h3>
                             <div class="item-date">2024</div>
                         </div>
                         <div class="item-subtitle">SENA - Estrategia de Marketing de Contenidos Digitales</div>
+                    </article>
+                    
+                    <article class="education-item">
+                        <div class="item-header">
+                            <h3 class="item-title">Diseño & Medios Digitales</h3>
+                            <div class="item-date">2023-2024</div>
+                        </div>
+                        <div class="item-subtitle">SENA - Ilustración Digital, Fotografía, Escritura Audiovisual</div>
                     </article>
                 </section>
                 
@@ -745,41 +787,7 @@
                         <div class="reference-position">Representante legal y referente comunitaria</div>
                         <div><i class="fas fa-phone"></i> 310 223 0357</div>
                     </div>
-                    
-                    <div class="reference-item">
-                        <div class="reference-name">Jenifer Tatiana</div>
-                        <div class="reference-position">Compañera en proyectos comunitarios</div>
-                        <div><i class="fas fa-phone"></i> 312 380 1154</div>
-                    </div>
                     <p style="font-style: italic; margin-top: 8px; color: var(--text-light); font-size: 11px;">Disponibles bajo solicitud</p>
-                </section>
-
-                <!-- PORTAFOLIO CON QR -->
-                <section class="section">
-                    <h2 class="section-title"><i class="fas fa-folder-open"></i> Portafolio Creativo</h2>
-                    <article class="experience-item">
-                        <div class="item-header">
-                            <h3 class="item-title">Portafolio de Arte & Diseño</h3>
-                        </div>
-                        <div class="item-subtitle">+40 obras en múltiples disciplinas</div>
-                        <div class="item-description">
-                            <div style="text-align: center; margin: 10px 0;">
-                                <!-- QR CODE DEL PORTAFOLIO -->
-                                <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://www.canva.com/design/DAG1H0l-sS0/view" 
-                                     alt="QR Code para mi portafolio creativo"
-                                     style="border-radius: 10px; border: 3px solid var(--light-accent); margin-bottom: 8px;">
-                                <p style="font-size: 11px; color: var(--text-light); margin: 5px 0;">
-                                    <strong>📱 Escanea para ver mi portafolio</strong><br>
-                                    <span style="font-size: 9px;">12 dibujos • 4 ilustraciones • 11 esculturas<br>9 fotografías • 6 diseños gráficos</span>
-                                </p>
-                                <a href="https://www.canva.com/design/DAG1H0l-sS0/view" 
-                                   target="_blank" 
-                                   style="color: var(--accent-color); font-size: 10px; text-decoration: none;">
-                                   <i class="fas fa-external-link-alt"></i> Ver en navegador
-                                </a>
-                            </div>
-                        </div>
-                    </article>
                 </section>
             </div>
         </main>
@@ -795,7 +803,7 @@
             printBtn.classList.add('pulse');
             printBtn.disabled = true;
             btnText.textContent = 'Preparando...';
-            printBtn.style.background = '#4a7bab';
+            printBtn.style.background = '#6a5a8c';
             
             // Simular procesamiento
             setTimeout(() => {
@@ -822,7 +830,7 @@
 
         // COPIA DINÁMICA DE URL
         function copyURL() {
-            const url = 'https://trabajaconkathe-dk.github.io/cv-alcaldia/';
+            const url = 'https://trabajaconkathe-dk.github.io/-cv-deisy-katherine/';
             const urlText = document.getElementById('url-text');
             const qrSection = document.querySelector('.qr-section');
             
@@ -837,7 +845,7 @@
                 setTimeout(() => {
                     qrSection.style.background = '';
                     urlText.style.color = '';
-                    urlText.innerHTML = 'https://trabajaconkathe-dk.github.io/cv-alcaldia/';
+                    urlText.innerHTML = 'https://trabajaconkathe-dk.github.io/-cv-deisy-katherine/';
                 }, 2000);
             });
         }
@@ -885,8 +893,8 @@
         });
 
         // OPTIMIZACIÓN PARA GITHUB PAGES
-        console.log('CV optimizado para Alcaldía - Guarda como index.html para GitHub Pages');
+        // El archivo debe guardarse como index.html para GitHub Pages
+        console.log('CV optimizado para GitHub Pages - Guarda como index.html');
     </script>
 </body>
-
 </html>
